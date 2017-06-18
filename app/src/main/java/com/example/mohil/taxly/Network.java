@@ -17,7 +17,7 @@ public class Network {
         httpClient = new OkHttpClient();
     }
     public void getData(){
-        Request request = new Request.Builder().url("http://localhost:3000").build();
+        Request request = new Request.Builder().url("http://localhost:3000/data").build();
         httpClient.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(Request request, IOException e) {
